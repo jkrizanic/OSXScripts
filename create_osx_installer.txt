@@ -2,6 +2,6 @@
 pkgbuild --identifier MyLib --install-location /usr/lib --root ./jnilib MyAppInstall.pkg 
 
 # 2. Makes product pkg based on Distribution file in current directory, 
-# packs Resources folder from current directory
-# and puts module created in step 1 into the path defined in step 1 (/usr/lib)!
+# packs Resources folder from current directory and puts module created in step 1 (MyAppInstall.pkg)
+# into the path defined in step 1 (/usr/lib)!
 productbuild --distribution Distribution --resources Resources MyAppInstaller.pkg
